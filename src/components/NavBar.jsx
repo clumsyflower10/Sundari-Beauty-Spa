@@ -20,16 +20,12 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: "Testimonials",
-    },
-    {
-      id: 5,
-      link: "Contact Us",
+      link: "Contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-6 text-white fixed bg-[rgb(171,175,124)]">
+    <div className="flex justify-between items-center w-full h-20 px-6  fixed bg-[rgb(171,175,124)]">
       <div>
         <img src={Logo} alt="" />
       </div>
@@ -45,6 +41,15 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+        <li className="px-4 cursor-pointer font-medium text-black hover:scale-105 duration-300">
+          <a
+            href="https://maps.app.goo.gl/93CgTyhLUxLttRYq8?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reviews
+          </a>
+        </li>
       </ul>
 
       <div

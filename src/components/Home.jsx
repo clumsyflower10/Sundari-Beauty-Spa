@@ -1,15 +1,16 @@
 import React from "react";
 import heroImage from "../assets/heroImage.png";
 import { BiSolidPhoneCall } from "react-icons/bi";
-import { Link } from "react-scroll";
 
 const Home = () => {
+  const whatsappNumber = "+628322063397";
+
   return (
-    <div name="home" className="h-screen w-full bg-[rgb(171,175,124)]">
+    <div name="Home" className="h-screen w-full bg-[rgb(171,175,124)]">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-6xl font-bold text-yellow-400">
-            Feel Natural, Feel you.
+            Feel Natural, Feel You.
           </h2>
 
           <p className="text-green-900 py-4 max-w-md">
@@ -19,14 +20,18 @@ const Home = () => {
           </p>
 
           <div>
-            <Link to="portfolio" smooth duration={500}>
-              <button className="group text-green-900 w-fit px-6 py-3 my-2 flex items-center hover:scale-105 duration-300 rounded-md bg-gradient-to-r from-orange-400 to bg-yellow-400 cursor-pointer">
+            <a
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="group text-green-900 font-bold w-fit px-6 py-3 my-2 flex items-center hover:scale-105 duration-300 rounded-md bg-gradient-to-r from-orange-400 to bg-yellow-400 cursor-pointer">
                 Book your appointment
                 <span className="group-hover:rotate-45 duration-300">
                   <BiSolidPhoneCall size={20} className="ml-1" />
                 </span>
               </button>
-            </Link>
+            </a>
           </div>
         </div>
 

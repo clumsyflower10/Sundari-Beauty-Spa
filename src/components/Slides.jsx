@@ -31,9 +31,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-[1400] h-[780px] w-full m-auto py-16 px-4 relative bg-[rgb(171,175,124)] flex flex-col items-center justify-center">
-      <p className="text-4xl sm:text-6xl pb-4 font-bold text-yellow-400">
-        Get to know us:
-      </p>
+      <p className="text-4xl pb-4 font-bold text-yellow-400">Get to know us:</p>
       <div
         style={{
           backgroundImage: `url(${slides[currentSlide].url})`,

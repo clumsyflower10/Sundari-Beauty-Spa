@@ -4,20 +4,50 @@ import { BiLogoGmail } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="max-w-full mx-auto py-16 px-4 grid lg:grid-col-3 gap-8 text-green-900 bg-[rgb(137,141,88)]">
+    <div className="max-w-full mx-auto py-6 px-4 gap-8 text-green-900 bg-[rgb(137,141,88)]">
       <div>
         <h1 className="w-full text-3xl font-bold">Open Daily</h1>
         <p className="py-2">Monday - Friday 8am - 5pm</p>
-        <p className="mb-8">Saturday - Sunday 9am - 6pm</p>
-        <div className="flex justify-between md:w-[75%] py-2">
-          <FaInstagram size={30} />
-          <FaTiktok size={30} />
-          <FaWhatsapp size={30} />
-          <FaFacebook size={30} />
-          <BiLogoGmail size={30} />
+        <p className="mb-2">Saturday - Sunday 9am - 6pm</p>
+        <div className="flex justify-start mb-2 md:w-[75%]">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram size={30} style={{ margin: "0 6px" }} />
+          </a>
+          <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTiktok size={30} style={{ margin: "0 6px" }} />
+          </a>
+          <a
+            href="https://www.whatsapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={30} style={{ margin: "0 6px" }} />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook size={30} style={{ margin: "0 6px" }} />
+          </a>
+          <a
+            href="mailto:your.email@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BiLogoGmail size={30} style={{ margin: "0 6px" }} />
+          </a>
         </div>
       </div>
-      <div className="lg:col-span-2 flex justify-between">
+      <div className=" flex justify-between">
         <div>
           <p>
             Jalan Lebak Sari No.3, Petitenget, Badung, Bali, 80361, Indonesia
