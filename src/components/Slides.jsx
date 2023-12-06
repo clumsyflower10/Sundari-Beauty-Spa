@@ -35,7 +35,7 @@ const Contact = () => {
       <div
         style={{
           backgroundImage: `url(${slides[currentSlide].url})`,
-          backgroundSize: "50%", // Adjust the percentage to your preference
+          backgroundSize: "50%",
           backgroundRepeat: "no-repeat",
         }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500 relative"
