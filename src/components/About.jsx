@@ -3,18 +3,21 @@ import aloe from "../assets/aloe.jpg";
 
 const About = () => {
   return (
-    <div name="About" className="h-screen w-full bg-[rgb(171,175,124)]">
+    <div
+      name="About"
+      className="h-auto md:h-screen w-full bg-[rgb(171,175,124)]"
+    >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="md:w-1/2  flex flex-col justify-center h-full">
+        <div className="md:w-1/2 flex flex-col justify-center">
           <img
             src={aloe}
             alt="heroImage"
-            className="mx-auto w-2/3 md:w-full py-10"
+            className="mx-auto w-full md:max-w-md md:ml-[-2px] py-10"
           />
         </div>
 
         <div className="md:w-1/2 bg-[rgb(171,175,124)]">
-          <div className=" max-w-md px-6 flex flex-col justify-centerbg-[rgb(171,175,124)] ">
+          <div className="max-w-md px-6 flex flex-col justify-center">
             <p className="text-4xl text-yellow-400 font-bold">About us</p>
 
             <h1 className="text-2xl sm:text-2xl font-bold">
