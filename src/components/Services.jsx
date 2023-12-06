@@ -16,9 +16,9 @@ const Services = () => {
 
   return (
     <div name="Services" className="bg-[rgb(171,175,124)] w-full md:h-screen">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col items-center justify-center w-full h-full">
+      <div className="max-w-screen-lg p-6 mx-auto flex flex-col items-center justify-center w-full h-full">
         <div className="pb-8">
-          <h1 className="text-yellow-400 text-4xl font-bold">
+          <h1 className="text-yellow-400 text-4xl font-bold pt-4">
             What we can do for you
           </h1>
         </div>

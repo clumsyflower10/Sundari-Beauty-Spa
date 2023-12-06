@@ -6,14 +6,14 @@ const Home = () => {
   const whatsappNumber = "+628322063397";
 
   return (
-    <div name="Home" className="h-screen w-full bg-[rgb(171,175,124)]">
+    <div name="Home" className="h-screen w-full bg-[rgb(171,175,124)] ">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-6xl font-bold text-yellow-400">
+          <h2 className="text-4xl sm:text-6xl font-bold text-yellow-400 mt-20">
             Feel Natural, Feel You.
           </h2>
 
-          <p className="text-green-900 py-4 max-w-md">
+          <p className="text-green-900 ml-2  max-w-md">
             Experience Authentic Balinese Bliss: Our Organic Spa, Where Nature
             Meets Tradition. Immerse in Home-Made Elixirs and Holistic Therapies
             for Mind, Body, Soul Rejuvenation.
@@ -39,7 +39,7 @@ const Home = () => {
           <img
             src={heroImage}
             alt="heroImage"
-            className="mx-auto w-2/3 md:w-full py-10"
+            className="mx-auto w-2/3 md:w-full mt-10 py-10"
           />
           <div className="flex flex-col justify-center items-end bg-[rgb(171,175,124)] ">
             <p className="px-6 text-green-900 max-w-md text-lg ml-[-20px]">

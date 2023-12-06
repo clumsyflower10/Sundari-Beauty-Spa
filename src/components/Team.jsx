@@ -16,61 +16,40 @@ const Team = () => {
           </h1>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 sm:px-0">
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={holistic} alt="" className="rounded-md" />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-2 py-1 text-green-900 text-xs">
-                Jass Choo, M.S. - Master Stylist and Hair Care Scientist
-              </button>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            {
+              img: holistic,
+              text: "Jass Choo, M.S. - Master Stylist and Hair Care Scientist",
+            },
+            {
+              img: therapist,
+              text: "Kirana Serenius, D.C. - Certified Chiropractor and Massage Therapist",
+            },
+            { img: nail, text: "Olivia Radiance - Licensed Esthetician" },
+            { img: owner, text: "Vindy Ephyvania - Holistic Nutritionist" },
+            {
+              img: skinexpert,
+              text: "Anne Marrie - Licensed Cosmetology & Esthetician ",
+            },
+            {
+              img: masseus,
+              text: "Gaby Stephany Sane - Master of Balinese Massage",
+            },
+          ].map(({ img, text }, index) => (
+            <div key={index} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={img}
+                alt=""
+                className="rounded-md w-full h-48 object-cover"
+              />
+              <div className="flex items-center justify-center">
+                <button className="w-full px-2 py-1 text-green-900 text-xs">
+                  {text}
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={therapist} alt="" className="rounded-md" />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-2 py-1 text-green-900 text-xs">
-                Kirana Serenius, D.C. - Certified Chiropractor and Massage
-                Therapist
-              </button>
-            </div>
-          </div>
-
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={nail} alt="" className="rounded-md" />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-2 py-1 text-green-900 text-xs">
-                Olivia Radiance - Licensed Esthetician
-              </button>
-            </div>
-          </div>
-
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={owner} alt="" className="rounded-md" />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-2 py-1 text-green-900 text-xs">
-                Vindy Ephyvania - Hollistic Nutritionist
-              </button>
-            </div>
-          </div>
-
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={skinexpert} alt="" className="rounded-md" />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-2 py-1 text-green-900 text-xs">
-                Gaby Stephany Sane - Master of Balinese Massage
-              </button>
-            </div>
-          </div>
-
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={masseus} alt="" className="rounded-md" />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-2 py-1 text-green-900 text-xs">
-                Anne Marrie - Licensed cosmetology & Esthetician
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
